@@ -3,7 +3,7 @@
 HidRawData is .NET class library written in C#.
 It reads the raw data from HID devices (gamepads, mice, keyboards, etc..)
 
-Using the code is very simple from WPF main window:
+Using the code from WPF main window is very simple:
 ```cs
 var reader = new HidDataReader(this);
 reader.HidDataReceived += this.OnHidDataReceived;
