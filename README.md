@@ -11,7 +11,7 @@ reader.HidDataReceived += this.OnHidDataReceived;
 
 Tested under Windows 7 and Windows 10.
 
-GUI, which uses the current library is available here:  
+WPF application, which uses the current library is available here:  
 https://github.com/djlastnight/HidRawDataWatcher  
 
 djlastnight,
