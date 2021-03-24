@@ -73,8 +73,11 @@
                 if (this.window != null)
                 {
                     var windowHandle = new WindowInteropHelper(this.window).Handle;
-                    var source = HwndSource.FromHwnd(windowHandle);
-                    source.RemoveHook(this.WndProc);
+                    if (windowHandle != IntPtr.Zero)
+                    {
+                        var source = HwndSource.FromHwnd(windowHandle);
+                        source.RemoveHook(this.WndProc);
+                    }
                 }
             }
         }
